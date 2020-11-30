@@ -80,6 +80,8 @@ class MRZ(object):
     
     def _checkDigitsTD1(self, mrz1, mrz2):
         
+        mrz = self._mrz
+        
         if mrz1[14] == "<":
             #Document number is bigger than 9 caracters
             tmp = mrz1[15:30].strip("<")
